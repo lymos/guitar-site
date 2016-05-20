@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+welcome
+<!--
 <html>
     <head>
         <title>Laravel</title>
@@ -43,3 +45,4 @@
         </div>
     </body>
 </html>
+-->
