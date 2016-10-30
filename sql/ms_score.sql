@@ -6,7 +6,7 @@ create table ms_score (
     type            tinyint(1) not null default 0 comment "0.pic 1.gtp 2.txt",
     content         text default null comment "content",
     description     varchar(255) not null default "" comment "description",
-    added_by        unsigned int(11) not null default 0 comment "added by",
+    added_by_userid        unsigned int(11) not null default 0 comment "added by",
     is_locked       tinyint(1) not null default 0 comment "1.locked",
     added_time      unsigned int(11) not null default 0 comment "added time",
 
