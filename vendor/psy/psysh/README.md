@@ -1,11 +1,11 @@
 # PsySH
 
 [![Package version](https://img.shields.io/packagist/v/psy/psysh.svg?style=flat-square)](https://packagist.org/packages/psy/psysh)
-[![Build status](https://img.shields.io/travis/bobthecow/psysh/master.svg?style=flat-square)](http://travis-ci.org/bobthecow/psysh)
-[![StyleCI](https://styleci.io/repos/4549925/shield)](https://styleci.io/repos/4549925)
+[![Monthly downloads](http://img.shields.io/packagist/dm/psy/psysh.svg?style=flat-square)](https://packagist.org/packages/psy/psysh)
 [![Made out of awesome](https://img.shields.io/badge/made_out_of_awesome-✓-brightgreen.svg?style=flat-square)](http://psysh.org)
 
-[![Join the chat at https://gitter.im/bobthecow/psysh](https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg?style=flat-square)](https://gitter.im/bobthecow/psysh)
+[![Build status](https://img.shields.io/travis/bobthecow/psysh/master.svg?style=flat-square)](http://travis-ci.org/bobthecow/psysh)
+[![StyleCI](https://styleci.io/repos/4549925/shield)](https://styleci.io/repos/4549925)
 
 
 ## About
@@ -140,6 +140,12 @@ return array(
     // By default, output contains colors if support for them is detected. To override:
     'colorMode' => \Psy\Configuration::COLOR_MODE_FORCED,   // force colors in output
     'colorMode' => \Psy\Configuration::COLOR_MODE_DISABLED, // disable colors in output
+
+    // Frequency of update checks when starting an interactive shell session. Valid
+    // options are 'always', 'daily', 'weekly', and 'monthly'. Default is 'weekly'.
+    //
+    // To disable update checks entirely, set to 'never'.
+    'updateCheck' => 'daily',
 );
 ```
 
@@ -176,4 +182,5 @@ The PsySH `doc` command is great for documenting source code, but you'll need a 
  * Symfony: [sf1-psysh-bootstrap](https://github.com/varas/sf1-psysh-bootstrap)
  * Symfony2: [`psymf`](https://github.com/navitronic/psymf), [sf2-psysh-bootstrap](https://github.com/varas/sf2-psysh-bootstrap), [symfony-repl](https://github.com/luxifer/symfony-repl), [PsyshBundle](https://github.com/theofidry/PsyshBundle)
  * WordPress: [`wp-cli shell`](https://github.com/wp-cli/wp-cli/blob/master/php/commands/shell.php)
+ * Yii 2: [`yii shell`](https://github.com/yiisoft/yii2-shell)
  * Zend Framework 2: [PsyshModule](https://zfmodules.com/gianarb/zf2-psysh-module)

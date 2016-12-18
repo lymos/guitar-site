@@ -22,12 +22,20 @@ class RouteServiceProvider extends ServiceProvider
      * @param  \Illuminate\Routing\Router  $router
      * @return void
      */
+/* laravel5.2
     public function boot(Router $router)
     {
         //
 
         parent::boot($router);
     }
+*/
+	/**
+ 	 * laravel5.3
+	 */
+	public function boot(){
+		parent::boot();
+	}
 
     /**
      * Define the routes for the application.

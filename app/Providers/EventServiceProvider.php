@@ -24,10 +24,18 @@ class EventServiceProvider extends ServiceProvider
      * @param  \Illuminate\Contracts\Events\Dispatcher  $events
      * @return void
      */
+/* laravel5.2
     public function boot(DispatcherContract $events)
     {
         parent::boot($events);
 
         //
     }
+*/
+	/**
+  	 * Register any other events for your application. laravel5.3
+	 */
+	public function boot(){
+		parent::boot();
+	}
 }
