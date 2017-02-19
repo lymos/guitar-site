@@ -1,0 +1,13 @@
+html, div, body, p{
+    box-sizing: border-box;
+}
+div{
+    width: 100%;
+    position: relative;
+}
+.header{
+    height: 60px;
+    border-bottom-color: #999;
+    border-bottom: 1px solid transparent;
+    background-color: #999;
+}
